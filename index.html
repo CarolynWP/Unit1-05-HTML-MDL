@@ -9,9 +9,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Google's MDL -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-orange.min.css" />
 		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
-		<title>My first webpage with MDL!</title>
+		<title>What animal are you?</title>
 	</head>
  <body>
 	 <!-- Google's MDL -->
@@ -21,8 +21,88 @@
 		 <!-- Web page header -->
 		 <header class = "mdl-layout__header">
 			 <div class = "mdl-layout__header-row">
-				 <span class = "mdl-layout-title">My first web page: With MDL additions</span>
+				 <span class = "mdl-layout-title">Which animal are you? QUIZ </span>
 			 </div>
 		 </header>
 		 <br>
+		 <br>
+		 <!-- Header -->
+		 <main class = "mdl-layout__content" style = "padding-left:20px">
+			 <div class = "page-content">First, enter your name here:</div>
+		 <!-- Textfield with Floating Label -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3">
+    <label class="mdl-textfield__label" for="sample3">Your name here</label>
+  </div>
+</form>
+<main class = "mdl-layout__content" style = "padding-left:0px">
+	<div class = "page-content">If you had to choose, where would you live?</div>
+<!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Mountains
+	</button>
+	<!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Ocean
+</button>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Forest
+</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Desert
+</button>
+	<br></br>
+	<main class = "mdl-layout__content" style = "padding-left:0px">
+	<div class = "page-content">How would you travel around?</div>
+		<!-- Raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+  By swimming
+</button>
+<!-- Raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+  By flying
+</button>
+<!-- Raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+  By running
+</button>
+		<br></br>
+	<main class = "mdl-layout__content" style = "padding-left:0px">
+	<div class = "page-content">What would you eat?</div>
+		<!-- Flat button with ripple -->
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+  Meat
+</button>
+		<br></br>
+<!-- Flat button with ripple -->
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+  Plants
+</button>
+		<br></br>
+<!-- Flat button with ripple -->
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+  All of the Above
+</button>
+		<br></br>
+<main class = "mdl-layout__content" style = "padding-left:0px">
+	<div class = "page-content">Calculate results:</div>
+	<button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button">Click to determine results: $1 fee</button>
+<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+<script>
+(function() {
+  'use strict';
+  window['counter'] = 0;
+  var snackbarContainer = document.querySelector('#demo-toast-example');
+  var showToastButton = document.querySelector('#demo-show-toast');
+  showToastButton.addEventListener('click', function() {
+    'use strict';
+    var data = {message: 'ERROR: Please click the link ' + ++counter};
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
+</script>
  </body>
